@@ -1,0 +1,47 @@
+Why do I need to provide my name and email address when I set up git?
+
+The first time you use git you'll probably see a message something like this:
+
+'''
+$ git commit -m "the first version"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+'''
+
+This is git telling you that you need to supply a name and email address for it to work. You might be concerned about why you need to provide this information and who gets to see it.
+
+**Why do I need to provide personal details to git?**
+Git is, essentially, a tool for collaboration. It enables multiple people to work on a project and keeps track of what changes have been made to the project files, and by whom, so identity is a central part of it. Generally speaking, it's important that any changes / contributions made to a project can be associated with an individual contributor and that they can be contacted about those changes. 
+
+But, when you're just starting out, you're unlikely to be interested in any of that! You just want to see how git works and try using it to keep track of your project for yourself. Nevertheless, you still need to set a git identity in order for it to work, so here are some pointers:
+
+**What information should I provide to git?**
+- 'Your Name' can be anything you like. Most people use a 'username' or alias (e.g. arfrank).
+- Your email address can also be anything you like. It needn't (and arguably shouldn't) be genuine /for now/ - see "Should I use a real email address?" below.
+
+**Will my information be shared?**
+- Git iself doesn't expose your name or email address to anyone. If you don't share your repository with anyone, or publish it on the web, then there is absolutely no risk you will inadvertently share your personal details.
+- It is likely that you will find you have a need to create an account on GitHub at some point in the future, if not now. 
+- You can choose to keep your email address private on GitHub.
+
+**Should I use a real email address when I'm just starting out?**
+You will need to use a genuine email address for git only when and if you start to use GitHub (or similar) as well. It's fine, and arguably advisable (if you're concerned about keeping your email address private), to use a fake email address up to that point. Here's why:
+
+When you set up a GitHub account GitHub supply you with a (genuine) 'noreply' email address specifically for use as your git identity, so you don't have to expose your personal email address in your repositories (see https://github.blog/2017-04-11-private-emails-now-more-private/). It's fairly straightforward to change your git identity to use this new address. However, any repositories you created /before the change/ - i.e. with your old (original) git identity - will still have that original identity associated with it. If that original identity used your real email address then you would still, effectively, be exposing your genuine email address on the web if you published any of those repositories on GitHub. If it was a fake address then that's clearly of no consequence. It is possible to retrospectively change the identity associated with any files in git but it's a bit involved and not necessarily advised (see e.g. https://stackoverflow.com/a/750182 and https://help.github.com/en/articles/changing-author-info).
+
+Privacy concerns aside, an advantage of using your genuine email address from the start is that you wouldn't have to make any changes when you come to set up a GitHub account.
+
+**See also**
+https://github.blog/2017-04-11-private-emails-now-more-private/
+https://stackoverflow.com/questions/897586/does-git-publicly-expose-my-e-mail-address
+https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
+https://stackoverflow.com/a/750182
+https://help.github.com/en/articles/changing-author-info
+
